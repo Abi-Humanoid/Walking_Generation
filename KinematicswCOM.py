@@ -7,10 +7,14 @@
 # NEW NOTES 25/6/22 re Paul April 10th
 # Use calculate_zmp as basis, sample scripts used in sections 3.3.5 (calcMC, calcCoM) and 4.3.1 (calcZMP):
 # Calculate_zmp has calcCOM and calcZMP. calcCOM contains calcMC to use.
+from vpython import *
+from time import *
+import random
+import numpy as np
+import math
 
 #specify initial conditions
 M = 100; #TotalMass from body downwards
 
 #know from body + feet: position, rotation, veloctiy and angular velocity
-
-
+from SetupJoints_InverseKinematics import SetupBiped
